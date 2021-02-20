@@ -16,8 +16,8 @@ public class MyBatisPlusConfig {
     /**
      * @description: 配置分页插件
      *
-     * @author: gradual
-     * @date: 2019/1/15 10:17
+     * @author: chengwei
+     * @date: 2021/02/20
      * @param: []
      * @return: com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor
      */

@@ -24,7 +24,7 @@ import com.example.demo.utils.RestResult;
  * @since 2021-02-19
  */
 @RestController
-@RequestMapping("/rest/1.0/test")
+@RequestMapping("/rest/1.0/stu")
 public class StuController {
 	
 	@Autowired
@@ -36,7 +36,7 @@ public class StuController {
 		return RestResult.resultOk(allStu);
 	}
 	
-	@GetMapping("stu/{id}")
+	@GetMapping("{id}")
 	public JSONObject getStu(@PathVariable(value = "id") Integer id) {
 		Stu one = stuService.getOne(Wrappers.<Stu>lambdaQuery().eq(Stu::getId, id));
 		return RestResult.resultOk(one);
